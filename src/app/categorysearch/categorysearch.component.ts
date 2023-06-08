@@ -104,7 +104,7 @@ export class CategorysearchComponent implements OnInit {
   postData(a:any)
   {
     console.log("POST")
-    axios.post("http://localhost:5000/data",{'list':[a]})
+    axios.post("http://13.232.222.16/data",{'list':[a]})
   }
 
   fetchProductDetails(key:Number): void {

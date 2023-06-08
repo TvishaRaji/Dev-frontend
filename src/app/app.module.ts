@@ -25,6 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 
 @NgModule({
@@ -54,7 +55,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatPaginatorModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth())
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
