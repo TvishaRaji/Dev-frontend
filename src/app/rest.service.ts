@@ -13,28 +13,28 @@ export class RestService {
    
     
     getUsers(){
-    return this.http.get<Users[]>("http://localhost:3000/Users");
+    return this.http.get<Users[]>("http://35.154.122.171/Users");
     
    }
 
    topUsers(){
-    return this.http.get<Users[]>("http://localhost:3000/Users?_limit=20")
+    return this.http.get<Users[]>("http://35.154.122.171/Users?_limit=20")
    }
 
 
    searchProduct(query: string) {
     return this.http.get<Users[]>(
-      `http://localhost:3000/Users?q=${query}`
+      `http://35.154.122.171/Users?q=${query}`
     );
     }
 
 
     getProduct(id:string){
-      return this.http.get<Users[]>(`http://localhost:3000/Users?Key=${id}`)
+      return this.http.get<Users[]>(`http://35.154.122.171/Users?Key=${id}`)
     }
 
     getProductDetails(id: string): Observable<Users[]> {
-      return this.http.get<Users[]>(`http://localhost:3000/Users?Key=${id}`);
+      return this.http.get<Users[]>(`http://35.154.122.171/Users?Key=${id}`);
     }
   
 }

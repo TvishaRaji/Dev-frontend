@@ -26,7 +26,8 @@ import { RestService } from '../rest.service';
       {
         let v=l[i][0]
         console.log(v)
-        axios.get(`http://localhost:3000/Users?Key=${v}`).then((res)=>{
+        // http://localhost:3000 => http://35.154.122.171/
+        axios.get(`http://35.154.122.171/Users?Key=${v}`).then((res)=>{
         this.lis.push(res.data)
         })
       }
