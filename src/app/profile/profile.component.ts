@@ -17,6 +17,7 @@ import { RestService } from '../rest.service';
 
   ngOnInit() {
     // Retrieve the product details from the shared service
+    // modified
     axios.get("http://13.232.222.16/data").then((res)=>{
       console.log(res.data)
       let l=res.data;
