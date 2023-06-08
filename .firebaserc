@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lmsp-88ae7": {
+      "hosting": {
+        "Client": [
+          "lmsp-88ae7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lmsp-88ae7"
+  }
+}
